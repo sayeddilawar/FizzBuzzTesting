@@ -33,4 +33,20 @@ public class FizzBuzzTest
         FizzBuzz object = new FizzBuzz(-2);
         assertEquals("null",object.checkFizzOrBuzz());
     }
+
+    @Test
+    void toCheckNumberIsInOrDivisibleByThree()
+    {
+        FizzBuzz object = new FizzBuzz(37);
+        assertEquals("Fizz",object.checkNumberIsIn());
+    }
+
+    @Test
+    void toCheckNumberIsInOrDivisibleByFive()
+    {
+        FizzBuzz object = new FizzBuzz(55);
+        assertEquals("Buzz",object.checkNumberIsIn());
+    }
+
+
 }
